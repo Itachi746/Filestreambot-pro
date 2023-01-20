@@ -10,7 +10,7 @@ from Adarsh import StartTime
 START_TEXT = """ Your Telegram DC Is : `{}`  """
 
 
-@StreamBot.on_message(filters.regex("🧑‍💻 owner"))
+@StreamBot.on_message(filters.regex("🧑‍💻owner"))
 async def maintainers(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
@@ -42,7 +42,7 @@ async def follow_user(b,m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Subscribe", url=f"https://telegram.me/Moviezpure")
+                                InlineKeyboardButton("Subscribe❤️", url=f"https://telegram.me/Moviezpure")
                             ]
                         ]
                     ),
